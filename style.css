@@ -1,0 +1,682 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato&family=Manrope:wght@600;700&family=Montserrat:wght@900&family=Raleway:wght@500&family=Roboto:wght@400;500&family=Work+Sans:wght@700;800&display=swap");
+
+/* Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background: #0c001d;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0 20px;
+  width: 1200px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Utility classes */
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+}
+.lato {
+  font-family: "Lato", sans-serif;
+}
+.mont {
+  font-family: "Montserrat", sans-serif;
+}
+.mt {
+  margin-top: 7rem;
+}
+.pt {
+  padding-top: 1.5rem;
+}
+.work {
+  font-family: "Work Sans", sans-serif;
+}
+.rale {
+  font-family: "Raleway", sans-serif;
+}
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+.rope {
+  font-family: "Manrope", sans-serif;
+}
+.text_center {
+  text-align: center !important;
+}
+
+/* Navbar */
+nav {
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4.1875rem;
+}
+
+.logo {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+.links {
+  justify-content: space-around;
+}
+
+.links > a {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.explore {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.explore > :first-child {
+  margin-right: 1rem;
+}
+
+select {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  color: #b6b6b6;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.explore_wrapper {
+  border-radius: 50px;
+  height: 54px;
+  position: relative;
+  background: linear-gradient(to right, #ff00c7, #6c2ed0, #ff00c7);
+  padding: 16px 40px;
+  width: 140px;
+}
+
+.explore_wrapper > a {
+  border-radius: 55px;
+  background: #0c001d;
+  color: white;
+  height: 52px;
+  width: 137px;
+  padding-top: 16px;
+  position: absolute;
+  text-align: center;
+  top: 1%;
+  left: 1%;
+  right: 1%;
+}
+
+/* Header */
+header {
+  background-image: url("./images/GALAXY.svg");
+  background-position: left -55% top 0% !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 10rem;
+}
+
+header > :first-child {
+  align-self: center;
+}
+
+h1 {
+  font-size: 4.3rem;
+  font-weight: 900;
+  line-height: 93px;
+  text-transform: uppercase;
+}
+
+h1 > span {
+  background: -webkit-linear-gradient(
+    60deg,
+    #ff00c7,
+    #ff00c7,
+    #6c2ed0
+  ) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+header :first-child > p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 21px;
+  margin-top: 7.5px;
+}
+
+header :first-child > a,
+.nodes :first-child > a {
+  align-items: center;
+  background: linear-gradient(
+      80.82deg,
+      rgba(255, 75, 0, 0.2) 53.38%,
+      rgba(255, 75, 0, 0.2) 96.22%
+    ),
+    radial-gradient(
+      100% 1020.58% at 100% 0%,
+      #ed2f2f 0%,
+      #544ec7 29.57%,
+      #2f80ed 100%
+    );
+  box-shadow: inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25),
+    inset 0px 2.99766px 37.4707px rgba(0, 0, 0, 0.25),
+    inset 0px 2.99766px 22.4824px rgba(0, 0, 0, 0.25);
+  border-radius: 37.4707px;
+  font-size: 1.4988;
+  font-weight: 800;
+  justify-content: center;
+  margin-top: 38px;
+  width: 140px;
+  height: 40px;
+  text-shadow: 0px 2.99766px 2.99766px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+}
+
+header :last-child,
+.nodes :last-child {
+  background: #0c001d;
+  position: relative;
+}
+
+.ellipse,
+.scope {
+  background: linear-gradient(to right, #ffd0b5, #e3507a);
+  border-radius: 100%;
+  height: 400px;
+  margin-left: auto;
+  position: relative;
+  width: 400px;
+  z-index: 20;
+}
+
+header :last-child > :nth-child(2) {
+  position: absolute;
+  height: 200px;
+  left: 12%;
+  top: 28%;
+  width: 180px;
+  z-index: 100;
+}
+
+header :last-child > :last-child {
+  background-color: initial;
+  position: absolute;
+  height: 500px;
+  left: 0%;
+  top: -3%;
+  width: 712px;
+  z-index: 90;
+}
+
+/* Galaxy */
+.galaxy {
+  padding-bottom: 9rem;
+}
+
+.galaxy > .grid {
+  background: #250b3a;
+  border-radius: 30px;
+  border-bottom: 0 !important;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  margin: 5rem auto;
+  place-items: center;
+  position: relative;
+  height: 252px;
+  width: 90%;
+}
+
+.galaxy > .grid::before {
+  content: "";
+  background: inherit;
+  border-radius: 30px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  height: 270px;
+  width: 97%;
+  z-index: -1;
+}
+
+.galaxy > .grid,
+.galaxy > .grid::before {
+  box-shadow: inset 0px 4px 50px rgb(255 255 255 / 25%),
+    inset 0px 4px 30px rgb(255 255 255 / 25%);
+}
+
+.galaxy > .grid > div {
+  border-right: 0.01px solid #7e8ea7 !important;
+  cursor: pointer;
+  height: 95px;
+  padding-right: 3rem;
+}
+
+.galaxy > .grid > div:nth-child(2) {
+  border-right: 0 !important;
+  position: relative;
+  margin-left: -7rem;
+  margin-top: -3rem;
+  margin-right: 0;
+}
+
+.galaxy > .grid > div:nth-child(3) {
+  border-radius: 20px;
+  border-right: 0 !important;
+  background: linear-gradient(
+    180deg,
+    #53b9ea 0%,
+    #2f80ed 49.88%,
+    #2f80ed 76.97%
+  );
+  box-shadow: inset 0px 9px 50px rgba(255, 255, 255, 0.41),
+    inset 0px 9px 50px rgba(255, 255, 255, 0.41),
+    inset 0px 9px 30px rgba(255, 255, 255, 0.41),
+    9px 9px 30px rgba(255, 255, 255, 0.41),
+    -9px -9px 30px rgba(255, 255, 255, 0.41);
+  margin-left: -6rem;
+  margin-top: -2.5rem;
+  padding: 2rem;
+  position: relative;
+  height: 341px;
+  width: 260px;
+}
+
+.galaxy > .grid > div:nth-child(3) > p {
+  font-size: 1rem;
+}
+
+.galaxy > .grid > div:last-child {
+  border-right: 0 !important;
+  margin-top: -3rem;
+  position: relative;
+}
+
+.galaxy > .grid > div > h4 {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.galaxy > .grid > div > p {
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 0.75rem;
+  position: relative;
+}
+
+.galaxy > .grid > div > p > img {
+  position: absolute;
+  bottom: -19%;
+}
+
+.galaxy > :last-child {
+  height: 135px;
+  position: absolute;
+  right: 5%;
+  width: 135px;
+}
+
+/* Join */
+.join {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 1rem;
+}
+
+.join > h2 {
+  font-size: 2.625rem;
+  font-weight: 800;
+}
+
+.join > p {
+  font-size: 12.52px;
+  font-weight: 400;
+  line-height: 20.04px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.join > img {
+  cursor: pointer;
+  display: inline-block;
+  height: 65px;
+  margin-right: 1.5rem;
+  width: 65px;
+}
+
+/* Nodes */
+.nodes {
+  grid-template-columns: 4fr 2fr;
+}
+
+.nodes :first-child > h2,
+.how > h2,
+.system > h2,
+.itworks > h2,
+.vapour > h2 {
+  color: #ecf1f0;
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.nodes :first-child > h2 {
+  color: #fff;
+}
+
+.nodes :first-child > p,
+.how > h2 + p,
+.system > p,
+.itworks > p,
+.vapour > p {
+  color: #b6b6b6;
+  font-size: 1.075rem;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.nodes :first-child > a {
+  margin-top: 1rem;
+  width: 160px;
+}
+
+.scope {
+  background: linear-gradient(to right, #ffd0b5, #2f80ed);
+  height: 300px;
+  margin-top: 30%;
+  width: 300px;
+}
+
+.nodes :last-child > :nth-child(2) {
+  height: 520px;
+  left: -7.5%;
+  position: absolute;
+  top: 0;
+  width: 550px;
+  z-index: 30;
+}
+
+.nodes :last-child > :last-child {
+  height: 245px;
+  right: -23%;
+  position: absolute;
+  top: 100;
+  width: 245px;
+  z-index: 30;
+}
+
+/* How to join */
+.how > h2 {
+  text-align: center;
+}
+
+.how_to {
+  background: url("./images/rocket.png") no-repeat;
+  background-position: left 50% bottom 5%;
+  background-size: contain;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  padding-bottom: 24rem;
+  padding-top: 6rem;
+  place-items: center;
+}
+
+.how_to div,
+.itworks > div.grid > div,
+.vapour > .grid > div {
+  background-color: #0c001d;
+  border-radius: 20px;
+  box-shadow: inset 0px 4px 50px rgba(255, 255, 255, 0.25),
+    inset 0px 4px 50px rgba(255, 255, 255, 0.25),
+    inset 0px 4px 30px rgba(255, 255, 255, 0.25);
+  height: 365.7px;
+  padding: 70px 1rem 0;
+  width: 250px;
+}
+
+.how_to > div > h5 {
+  color: #ecf1f0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 24px;
+}
+
+.how_to > div > p {
+  color: #b6b6b6;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 1rem;
+}
+
+.how_to > div > a {
+  color: #02aeca;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 2rem;
+}
+
+.how_to > div:nth-child(odd) > a {
+  margin-top: 3.75rem;
+}
+
+/* System */
+.system {
+  position: relative;
+}
+
+.system > h2 {
+  text-transform: none;
+}
+
+.system > p {
+  font-size: 0.85rem;
+  margin: 0 auto;
+  padding-top: 14px;
+  width: 70%;
+}
+
+.system :nth-child(3) {
+  height: 217.37px;
+  left: -5%;
+  position: absolute;
+  top: -7.5%;
+  width: 217.37px;
+}
+
+.system :last-child {
+  height: 300px;
+  right: -8%;
+  position: absolute;
+  top: -8.5%;
+}
+
+/* How it works */
+.itworks {
+  margin-bottom: 30rem;
+  position: relative;
+}
+
+.itworks > div.grid,
+.vapour > .grid {
+  grid-template-columns: repeat(3, 1fr);
+  margin: 4rem auto 0;
+  place-items: center;
+  width: 80%;
+  z-index: 100;
+}
+
+.itworks > div.grid > div {
+  padding-top: 24px;
+  height: 340px;
+}
+
+.itworks > div.grid > div > img {
+  display: block;
+  margin: 0 auto;
+}
+
+.itworks > div.grid > div > h5 {
+  color: #ecf1f0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 2rem 1rem;
+}
+
+.itworks > div.grid > div > p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.itworks :nth-child(4) {
+  height: 871px;
+  left: -12%;
+  position: absolute;
+  top: 32%;
+  width: 871px;
+  z-index: -1;
+}
+
+.itworks > :last-child {
+  height: 300px;
+  right: -5%;
+  position: absolute;
+  top: 90%;
+}
+
+/* Learn about VapourFi */
+.vapour {
+  position: relative;
+}
+.vapour > h2 {
+  font-weight: 700;
+}
+
+.vapour > .grid {
+  gap: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  background-image: url("./images/launcher.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left 55% bottom 27%;
+  padding-bottom: 20rem;
+}
+
+.vapour > .grid > div {
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  height: 151px;
+  align-items: center;
+  justify-content: center;
+  line-height: 35.52px;
+  padding: 0 1rem;
+  position: relative;
+  width: 300px;
+}
+
+.vapour > .grid > div::after {
+  background: linear-gradient(to right, #2f80ed, #02aeca);
+  top: 80%;
+  content: "⌄";
+  cursor: pointer;
+  font-size: 2rem;
+  height: 64px;
+  position: absolute;
+  width: 64px;
+}
+
+.vapour > .grid > div:nth-child(2)::after {
+  background: #000;
+  color: #2f80ed;
+}
+
+.vapour > .grid > div:last-child {
+  line-height: 1;
+  padding: 0 5rem;
+}
+
+.vapour a {
+  color: #2f80ed;
+  font-size: 1rem;
+  font-weight: 400;
+  position: absolute;
+  left: 9%;
+  top: 60%;
+}
+
+.vapour a > span {
+  padding-left: 1rem;
+}
+.vapour a > span:hover {
+  transform: rotate(-90deg);
+}
+
+/* footer */
+footer {
+  color: #ecf1f0;
+  gap: 3rem;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  padding-bottom: 4rem;
+}
+
+footer > h3 {
+  font-weight: 700;
+}
+
+.social {
+  margin-top: 4rem;
+}
+
+.social > a {
+  padding-right: 0.85rem;
+}
+
+.social + p {
+  color: #b6b6b6;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+}
+
+footer > :not(:first-child) > h6 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+footer > :not(:first-child) > a {
+  color: #b6b6b6;
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: 1.5rem;
+}
